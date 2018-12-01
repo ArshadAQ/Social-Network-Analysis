@@ -1,0 +1,9 @@
+CREATE CONSTRAINT ON ( follower:Follower ) ASSERT follower.id IS UNIQUE
+CREATE CONSTRAINT ON ( follower:Follower ) ASSERT follower.screen_name IS UNIQUE
+CREATE CONSTRAINT ON ( member:Member ) ASSERT member.id IS UNIQUE
+CREATE CONSTRAINT ON ( member:Member ) ASSERT member.screen_name IS UNIQUE
+CREATE CONSTRAINT ON ( party:Party ) ASSERT party.id IS UNIQUE
+CREATE CONSTRAINT ON ( party:Party ) ASSERT party.name IS UNIQUE
+CREATE CONSTRAINT ON ( tweet:Tweet ) ASSERT tweet.id IS UNIQUE
+CREATE CONSTRAINT ON ( user:User ) ASSERT user.id IS UNIQUE
+CREATE CONSTRAINT ON ( user:User ) ASSERT user.screen_name IS UNIQUE
