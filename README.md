@@ -8,7 +8,22 @@ Dataset source: https://zenodo.org/record/835735#.XAKJw2gzbQA
 ## Project Workflow
 
 #### 1. Dataset collection
+- Get party-member followers from Twitter
+
 #### 2. Preprocessing
+- Minify JSON files to reduce size. Initial dataset size amounted to 10GB
+- Detect invalid JSON files and discard them
+- Concatenate 1308 JSON files to 13 files
+
 #### 3. Importing
+- Import party-member
+  - Relate every member with a party using a _MEMBER_OF_ relationship
+- Import party-member followers
+  - Relate follower with party-member using a _FOLLOWS_ relationship
+- Import tweets
+  - Create user _POSTS_ tweet relationship
+  - Create tweet _RETWEETS_ tweet relationship
+- Set members, followers as users
+- Set database constraints
 #### 4. Analysis
 #### 5. Results
