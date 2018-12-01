@@ -21,3 +21,11 @@ merge(f)-[:FOLLOWS]->(u)
 with m, u
 detach delete m
 set u:Member
+
+MATCH p=(t1:Tweet)-[r:RETWEETS]->(t2)
+with t2, collect(t1) as t3
+merge(t5:Tweet{id:t2.id})
+with t2, t3, t5
+unwind t3 as t4
+merge(t4)-[:RETWEETS]->(t5)
+detach delete t2
