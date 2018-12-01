@@ -12,8 +12,9 @@ def minify(output_filename, input_filename):
 
 files = glob.glob('recorded-tweets/chunk*.json')
 # files = ['recorded-tweets/chunk-00dfb3ed-4655-4ea9-8223-731ea9eb97a6.json','recorded-tweets/chunk-0a1f5cfe-0002-4dc5-ba6d-f54f24e2a5d8.json'][::-1]
-files = files[1144:]
-count = 1144
+#files = files[1144:]
+count = 0
+#count = 1144
 for file1 in files:
     count += 1
     opFile = "recorded-tweets-minify/"+ str(count) + ".json"
