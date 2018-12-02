@@ -23,4 +23,4 @@ match(t:Tweet) where split(t.timestamp," ")[1] =  month return month, count(t) o
 
 // No. of newly created accounts leading into the election
 unwind ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep", "Oct","Nov", "Dec"] as month
-match(u:User) where (split(u.created_at," ")[1] =  month and split(u.created_at," ")[5] = 2017) return month, count(u) order by count(u) desc
+match(u:User) where (split(u.created_at," ")[1] =  month and split(u.created_at," ")[5] = "2017") return month, count(u) order by count(u) desc
