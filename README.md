@@ -31,6 +31,12 @@ Dataset source: https://zenodo.org/record/835735#.XAKJw2gzbQA
   - Users who were retweeted the most
   - Distinct characteristics of the above users
 - Harmonic
+  - Users who are connected to a wide variety of people based on retweets
+  - Check if those users happen to be party members
 - Betweenness
+  - Users who can better link different groups
 - Other analysis
+  - Idea of the no.of tweeters related to each party
+  - Time analysis of tweets leading into the election
+  - Time analysis of no.of new accounts leading into the election
 #### 5. Results
