@@ -34,10 +34,3 @@ ORDER BY t.`r-pagerank` DESC LIMIT 10
 MATCH (t:Member)-[:MEMBER_OF]->(p:Party)
 RETURN t.screen_name, t.location, p.name, t.`r-pagerank` 
 ORDER BY t.`r-pagerank` DESC LIMIT 10
-
-
-
-// 
-MATCH (m:Member)-[:MEMBER_OF]->(p:Party) Return p.name, sum(m.pagerank) order by sum(m.pagerank) DESC limit 10
-
-MATCH (m:Member)-[:MEMBER_OF]->(p:Party) return m.name, p.name, m.pagerank order by m.pagerank DESC limit 10
