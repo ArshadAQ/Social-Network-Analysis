@@ -7,15 +7,15 @@ Dataset source: https://zenodo.org/record/835735#.XAKJw2gzbQA
 
 ## Project Workflow
 
-#### 1. Dataset collection
+### 1. Dataset collection
 - Get party-member followers from Twitter
 
-#### 2. Preprocessing
+### 2. Preprocessing
 - Minify JSON files to reduce size. Initial dataset size amounted to 10GB
 - Detect invalid JSON files and discard them
 - Concatenate 1308 JSON files to 13 files
 
-#### 3. Importing
+### 3. Importing
 - Import party-member
   - Relate every member with a party using a _MEMBER_OF_ relationship
 - Import party-member followers
@@ -25,7 +25,7 @@ Dataset source: https://zenodo.org/record/835735#.XAKJw2gzbQA
   - Create tweet _RETWEETS_ tweet relationship
 - Set members, followers as users
 - Set database constraints
-#### 4. Graph algorithms and related analysis
+### 4. Graph algorithms and related analysis
 - Page rank
   - Users who were followed the most
   - Users who were retweeted the most
@@ -39,7 +39,7 @@ Dataset source: https://zenodo.org/record/835735#.XAKJw2gzbQA
   - Idea of the no.of tweeters related to each party
   - Time analysis of tweets leading into the election
   - Time analysis of no.of new accounts leading into the election
-#### 5. Visualisation
+### 5. Visualisation
 
   <p>a) Party-member graph</p>
   <p>b) Betweenness centrality</p>
