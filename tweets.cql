@@ -28,3 +28,8 @@ WITH distinct t, tweet
 WHERE tweet.retweeted_status is not null
 MERGE (t) - [:RETWEETS] -> (Tweet{id:tweet.retweeted_status.id})",
 {batchSize:1, iterateList:true, parallel:true})
+
+MATCH (r1:User)-[:POSTS]->(:Tweet)<-[:RETWEETS]-(:Tweet)<-[:POSTS]-(r2:User)
+WITH r1, r2, COUNT(*) AS count
+CREATE (r2)-[r:RETWEETS_USER]->(r1)
+SET r.count = count
