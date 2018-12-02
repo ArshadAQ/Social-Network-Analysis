@@ -25,5 +25,18 @@ Dataset source: https://zenodo.org/record/835735#.XAKJw2gzbQA
   - Create tweet _RETWEETS_ tweet relationship
 - Set members, followers as users
 - Set database constraints
-#### 4. Analysis
+#### 4. Graph algorithms and related analysis
+- Page rank
+  - Users who were followed the most
+  - Users who were retweeted the most
+  - Distinct characteristics of the above users
+- Harmonic
+  - Users who are connected to a wide variety of people based on retweets
+  - Check if those users happen to be party members
+- Betweenness
+  - Users who can better link different groups
+- Other analysis
+  - Idea of the no.of tweeters related to each party
+  - Time analysis of tweets leading into the election
+  - Time analysis of no.of new accounts leading into the election
 #### 5. Results
