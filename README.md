@@ -25,5 +25,12 @@ Dataset source: https://zenodo.org/record/835735#.XAKJw2gzbQA
   - Create tweet _RETWEETS_ tweet relationship
 - Set members, followers as users
 - Set database constraints
-#### 4. Analysis
+#### 4. Graph algorithms and related analysis
+- Page rank
+  - Users who were followed the most
+  - Users who were retweeted the most
+  - Distinct characteristics of the above users
+- Harmonic
+- Betweenness
+- Other analysis
 #### 5. Results
