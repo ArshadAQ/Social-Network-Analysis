@@ -53,3 +53,9 @@ Dataset source: https://zenodo.org/record/835735#.XAKJw2gzbQA
   <img width = "45%" src = "Screenshots/betweenness.PNG">
   <img width = "45%" src = "Screenshots/harmonic.PNG">
 </div>
+
+## Conclusion
+
+Results showed how the twitter activity increased leading into the election. Although social media can give insights to some extent, the current limited analysis shows that election results can't be confidently predicted with the current analysis done. The analysis did give a rough idea of the top parties, but a single party wasn't at the top most of the times to confidently predict. 
+
+Nonetheless, for future analysis, text processing could be used to give much more better and reliable results as that could capture the sentiment and mood in the tweets.
